@@ -1,0 +1,10 @@
+---
+
+- step:
+    name: Train Handball YOLO Darknet
+    image: daisukekobayashi/darknet:gpu
+    command: ./04train.sh
+    inputs:
+      - name: pre-trainedmodel
+      - name: traintestdata
+
