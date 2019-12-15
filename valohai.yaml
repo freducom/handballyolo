@@ -2,7 +2,7 @@
 
 - step:
     name: Train Handball YOLO Darknet
-    image: daisukekobayashi/darknet:gpu
+    image: freducom/yolodarknet:version1.0
     command: 
        - wget https://pjreddie.com/media/files/darknet53.conv.74
        - tar xvzf /valohai/inputs/traintestdata/handball.tar.gz
