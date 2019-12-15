@@ -8,7 +8,7 @@ DATAFOLDER=dataset
 
 #Split images to train & test set
 TOTALFILES=$(ls -1 $DATAFOLDER/$INPUTFILE/*.jpg | wc -l)
-TRAINSETSIZE=$((TOTALFILES*8/10))
+TRAINSETSIZE=$((TOTALFILES*8/10)) #80% is training data
 i=0
 for f in $DATAFOLDER/$INPUTFILE/*.jpg ; do
     LABELFILE="${f%%.*}.txt"

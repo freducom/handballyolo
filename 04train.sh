@@ -1,8 +1,5 @@
 #!/bin/bash
 
-#Unzip training data
-
-
 #Actual training with pretrained model weights
 ./darknet detector train /inputs/yolosettings/yolosettings/detector.data /inputs/yolosettings/yolosettings/cfg/yolov3-custom.cfg darknet53.conv.74 
 
