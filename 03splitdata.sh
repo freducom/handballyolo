@@ -14,12 +14,12 @@ for f in $DATAFOLDER/$INPUTFILE/*.jpg ; do
     LABELFILE="${f%%.*}.txt"
     if [ $i -lt $TRAINSETSIZE ]; then
         if [ -f "$LABELFILE" ]; then
-                echo "/valohai/inputs/handballs/"$f >> $DATAFOLDER/train.txt;
+                echo "/valohai/inputs/handballs/"$f >> $DATAFOLDER/$INPUTFILE/train.txt;
         fi
         i=$(($i+1))
     else
         if [ -f "$LABELFILE" ]; then
-                echo "/valohai/inputs/handballs/"$f >> $DATAFOLDER/test.txt;
+                echo "/valohai/inputs/handballs/"$f >> $DATAFOLDER/$INPUTFILE/test.txt;
         fi
     fi
 done
