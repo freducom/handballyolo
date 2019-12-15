@@ -4,9 +4,11 @@
     name: Train Handball YOLO Darknet
     image: daisukekobayashi/darknet:gpu
     command: 
-	tar xvzf /valohai/inputs/handball.tar.gz
+	wget https://pjreddie.com/media/files/darknet53.conv.74
+	tar xvzf /valohai/inputs/traintestdata/handball.tar.gz
+	tar xvzf /valohai/inputs/yolosettings/yolosettings.tar.gz
 	./04train.sh
     inputs:
-      - name: pre-trainedmodel
+      - name: yolosettings
       - name: traintestdata
 
