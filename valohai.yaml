@@ -10,7 +10,7 @@
        - ./04train.sh
     inputs:
       - name: yolosettings
-        default: https://www.dropbox.com/s/9txv5s8iikdzq42/yolosettings.tar.gz?dl=0
+        default: https://www.dropbox.com/s/9txv5s8iikdzq42/yolosettings.tar.gz
       - name: traintestdata
-        default: https://www.dropbox.com/s/1hb0pegqg8uk1y9/handball.tar.gz?dl=0
+        default: https://www.dropbox.com/s/1hb0pegqg8uk1y9/handball.tar.gz
 
