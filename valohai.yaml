@@ -3,12 +3,14 @@
 - step:
     name: Train Handball YOLO Darknet
     image: freducom/yolodarknet:version1.0
-    command: 
+    command:
        - wget https://pjreddie.com/media/files/darknet53.conv.74
        - tar xvzf /valohai/inputs/traintestdata/handball.tar.gz
        - tar xvzf /valohai/inputs/yolosettings/yolosettings.tar.gz
        - ./04train.sh
     inputs:
       - name: yolosettings
+      default: https://www.dropbox.com/s/9txv5s8iikdzq42/yolosettings.tar.gz?dl=0
       - name: traintestdata
+      default: https://www.dropbox.com/s/1hb0pegqg8uk1y9/handball.tar.gz?dl=0
 
